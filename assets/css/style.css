@@ -8,5 +8,46 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     color: #2F4858;
-    background-color: #119641;
+}
+
+#outer-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right bottom, #f27575, #fc886c, #ff9e66, #ffb463, #ffcb66, #f6d666, #eae169, #ddeb70, #c8ed6f, #b1ee72, #96ef77, #76f080);
+}
+
+.make-transparetnt {
+    background-color: transparent;
+}
+
+#inner-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: transparent;
+}
+
+#menu-icon {
+    font-size: x-large;
+    background-color: transparent;
+}
+
+#menu-icon:hover {
+    font-size: xx-large;
+}
+
+#start-btn {
+    border: 2px solid #2F4858;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
 }
