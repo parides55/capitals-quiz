@@ -1,4 +1,4 @@
-let questions = [
+const questions = [
     {
         question : 'What is the answer to this question',
         choice1 : 'answer1',

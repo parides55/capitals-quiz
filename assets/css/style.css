@@ -52,12 +52,7 @@ h1 {
     font-size: xx-large;
 }
 
-#menu-icon {
-    font-size: xx-large;
-    background-color: transparent;
-}
-
-#menu-icon:hover {
+#menu:hover {
     font-size: xxx-large;
     cursor: pointer;
 }
@@ -70,9 +65,11 @@ h1 {
     font-size: xx-large;
 }
 
-#start-btn:hover {
+#start-btn:hover,
+#next-btn:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px #2F4858;
+    font-size: xx-large;
 }
 
 #menu-selections {
@@ -93,19 +90,24 @@ h1 {
     font-size: xx-large;
 }
 
+#questions-container {
+    justify-content: flex-end;
+}
+
 #game {
-    height: 50%;
+    height: 80%;
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .choice-container {
     border: 2px solid #2F4858;
     border-radius: 10px;
     width: 100%;
+    padding: 10px 5px;
 }
 
 .choice-container:hover {
@@ -126,4 +128,27 @@ h1 {
 
 #game p {
     text-align: center;
+}
+
+#spans-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#next-btn {
+    border: 2px solid #2F4858;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+    background-color: transparent;
+    padding: 5px 20px;
+}
+
+/* Media queries for smaller screens*/
+@media (max-width: 414px) {
+    h1 {
+        font-size: xx-large;
+        text-shadow: 3px 3px 5px #656466;
+    }
 }
