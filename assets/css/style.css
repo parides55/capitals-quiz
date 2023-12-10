@@ -148,7 +148,11 @@ h1 {
 /* Media queries for smaller screens*/
 @media (max-width: 414px) {
     h1 {
-        font-size: xx-large;
+        font-size: larger;
         text-shadow: 3px 3px 5px #656466;
+    }
+
+    #game {
+        width: 85%;
     }
 }
