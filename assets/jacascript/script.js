@@ -1,5 +1,5 @@
 const question = document.getElementById('question');
-const choices = document.getElementsByClassName('choice-text');
+const choices = document.getElementsByClassName('choice-btn');
 const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
 const maxQuestions = 3;
@@ -74,11 +74,13 @@ function startQuiz() {
  */
 function getNewQuestion() {
 
+    
     nextButton.style.display = 'none';
 
     for (choice of choices) {
         choice.parentElement.classList.remove('correct-answer');
         choice.parentElement.classList.remove('wrong-answer');
+        choice.disabled = false;
     }
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
@@ -105,19 +107,25 @@ for (choice of choices) {
     choice.addEventListener('click', checkAnswer);
 }
 
-function checkAnswer() {
+function checkAnswer(event) {
     for (choice of choices) {
-        isCorrect = this.getAttribute('data-number');
+        const selectedChoice = event.target;
+        selectedAnswer = selectedChoice.getAttribute('data-number');
+        const displayCorrect = 
+        choice.disabled = true;
     }
 
-    if (isCorrect === currentQuestion.answer) {
+    if (selectedAnswer === currentQuestion.answer) {
         this.parentElement.classList.add('correct-answer');
         incrementScore(pointsCorrect);  
     } else {
         this.parentElement.classList.add('wrong-answer');
     }
 
-    nextButton.style.display = 'block'
+
+
+    
+    nextButton.style.display = 'block';
 
 }
 
