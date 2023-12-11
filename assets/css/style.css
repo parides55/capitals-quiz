@@ -118,14 +118,27 @@ h1 {
     border-radius: 10px;
     width: 100%;
     padding: 10px 5px;
+    display: flex;
+    justify-content: center;
 }
 
-.choice-container:hover:not([disabled]) {
+.choice-container:hover {
     cursor: pointer;
-    font-size: larger;
 }
 
-.choice-container:disabled {
+.choice-btn {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: large;
+}
+
+.choice-btn:hover:not([disabled]) {
+    cursor: pointer;
+    font-size: x-large;
+}
+
+.choice-btn:disabled {
     cursor: no-drop;
 }
 
