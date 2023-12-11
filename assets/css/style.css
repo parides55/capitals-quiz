@@ -112,17 +112,14 @@ h1 {
 
 .choice-container:hover {
     cursor: pointer;
-    background-color: #9BAEBC;
     font-size: larger;
 }
 
-#correct-answer:hover {
-    cursor: pointer;
+.correct-answer {
     background-color: #76F080;
 }
 
-#wrong-answer:hover {
-    cursor: pointer;
+.wrong-answer {
     background-color: #F27575;
 }
 

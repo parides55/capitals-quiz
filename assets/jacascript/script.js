@@ -1,9 +1,8 @@
 const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
+const choices = document.getElementsByClassName('choice-text');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 const nextButton = document.getElementById('next-btn');
-
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -54,7 +53,10 @@ const questions = [
         choice4: 'Madrid',
         answer: '4'
     }
-]
+];
+
+nextButton.addEventListener('click', getNewQuestion);
+
 
 function startQuiz() {
     questionCounter = 0;
@@ -65,9 +67,14 @@ function startQuiz() {
 
 function getNewQuestion() {
 
-if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-    return window.location.assign('contact.html');
-}
+    for (choice of choices) {
+        choice.parentElement.classList.remove('correct-answer');
+        choice.parentElement.classList.remove('wrong-answer');
+    }
+
+    if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+        return window.location.assign('contact.html');
+    }
 
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -82,7 +89,28 @@ if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
     availableQuestions.splice(questionIndex, 1);
 }
 
-nextButton.addEventListener('click', getNewQuestion);
+function checkAnswer() {
+    for (choice of choices) {
+        isCorrect = this.getAttribute('data-number');
+        if (isCorrect === currentQuestion.answer) {
+            this.parentElement.classList.add('correct-answer');
+            incrementScore();
+        } else {
+            this.parentElement.classList.add('wrong-answer');
+            
+        }
+    }
+}
+
+for (choice of choices) {
+    choice.addEventListener('click', checkAnswer);
+}
+
+function incrementScore() {
+    console.log('you scored');
+}
+
+
 
 
 startQuiz();
