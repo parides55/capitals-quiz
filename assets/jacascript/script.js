@@ -1,5 +1,7 @@
 const question = document.getElementById('question');
 const choices = document.getElementsByClassName('choice-text');
+const yourScore = document.getElementById('score');
+const questionNumber = document.getElementById('counter');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 const nextButton = document.getElementById('next-btn');
@@ -65,7 +67,14 @@ function startQuiz() {
     getNewQuestion();
 }
 
+/**
+ * Get a new question randomly form the questionBank and remove that question from the available ones
+ * and incrementes the number of questions left.
+ * Removes the NEXT button until a new selection is made.
+ */
 function getNewQuestion() {
+
+    nextButton.style.display = 'none';
 
     for (choice of choices) {
         choice.parentElement.classList.remove('correct-answer');
@@ -77,6 +86,8 @@ function getNewQuestion() {
     }
 
     questionCounter++;
+    questionNumber.innerText = `${questionCounter}/${maxQuestions}`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -89,28 +100,33 @@ function getNewQuestion() {
     availableQuestions.splice(questionIndex, 1);
 }
 
-function checkAnswer() {
-    for (choice of choices) {
-        isCorrect = this.getAttribute('data-number');
-        if (isCorrect === currentQuestion.answer) {
-            this.parentElement.classList.add('correct-answer');
-            incrementScore();
-        } else {
-            this.parentElement.classList.add('wrong-answer');
-            
-        }
-    }
-}
-
+//Checks the answer when a choice is clicked and displays the next button.
 for (choice of choices) {
     choice.addEventListener('click', checkAnswer);
 }
 
-function incrementScore() {
-    console.log('you scored');
+function checkAnswer() {
+    for (choice of choices) {
+        isCorrect = this.getAttribute('data-number');
+    }
+
+    if (isCorrect === currentQuestion.answer) {
+        this.parentElement.classList.add('correct-answer');
+        incrementScore(pointsCorrect);  
+    } else {
+        this.parentElement.classList.add('wrong-answer');
+    }
+
+    nextButton.style.display = 'block'
+
 }
 
 
+//Increments score
+function incrementScore(num) {
+    score += num;
+    yourScore.innerText = score;
+}
 
 
 startQuiz();

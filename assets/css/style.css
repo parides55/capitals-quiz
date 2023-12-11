@@ -65,17 +65,12 @@ h1 {
     font-size: xx-large;
 }
 
-#start-btn:hover,
-#next-btn:hover {
+#start-btn:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px #2F4858;
     font-size: xx-large;
 }
 
-#menu-selections {
-    text-align: left;
-    text-decoration: none;
-}
 
 /* Styling the quiz page*/
 #home-btn {
@@ -88,6 +83,21 @@ h1 {
 
 #home-btn:hover {
     font-size: xx-large;
+}
+
+#next-btn {
+    border: 2px solid #2F4858;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: transparent;
+    display: none;
+}
+
+#next-btn:hover {
+    cursor: pointer;
+    font-size: larger;
 }
 
 #questions-container {
@@ -110,9 +120,13 @@ h1 {
     padding: 10px 5px;
 }
 
-.choice-container:hover {
+.choice-container:hover:not([disabled]) {
     cursor: pointer;
     font-size: larger;
+}
+
+.choice-container:disabled {
+    cursor: no-drop;
 }
 
 .correct-answer {
@@ -133,19 +147,26 @@ h1 {
     justify-content: space-between;
 }
 
-#next-btn {
-    border: 2px solid #2F4858;
-    border-radius: 5px;
-    font-size: large;
-    text-align: center;
-    background-color: transparent;
-    padding: 5px 20px;
+/* Styling the Conatct page*/
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Styling the Conatct page*/
-.input-divs {
-    height: 50px;
-    width: 70%;
+.inputs {
+    width: 80%;
+    padding: 5px;
+    border: 2px solid #2F4858;
+    border-radius: 5px;
+}
+
+#submit-btn {
+    border: 2px solid #2F4858;
+    border-radius: 5px;
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
 }
 
 /* Media queries for smaller screens*/
