@@ -145,6 +145,12 @@ h1 {
     padding: 5px 20px;
 }
 
+/* Styling the Conatct page*/
+.input-divs {
+    height: 50px;
+    width: 70%;
+}
+
 /* Media queries for smaller screens*/
 @media (max-width: 414px) {
     h1 {

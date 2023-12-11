@@ -1,22 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Contact Form</title>
-</head>
+  </head>
 
-<body>
-        <button id="menu">
-            <i class="fa-solid fa-list-ul" id="menu-icon"></i>
-        </button>
-        <a href="index.html" id="home-btn"><i class="fa-solid fa-house" id="home-icon"></i></a>
+  <body>
+    <button id="menu">
+      <i class="fa-solid fa-list-ul" id="menu-icon"></i>
+    </button>
+    <a href="index.html" id="home-btn"
+      ><i class="fa-solid fa-house" id="home-icon"></i
+    ></a>
 
-    <script src="https://kit.fontawesome.com/ed8bd9da59.js" crossorigin="anonymous"></script>
+    <div class="container">
+      <from>
+        <div class="input-divs">
+          <label for="fullname">First Name</label>
+        </div>
+
+        <div class="input-divs">
+          <input type="text" id="fulltname" placeholder="Full Name" />
+        </div>
+
+        <div class="input-divs">
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="input-divs">
+          <input type="email" id="email" placeholder="youremail@email.com" />
+        </div>
+
+        <div class="input-divs">
+          <label for="message">Message</label>
+        </div>
+        
+        <div class="input-divs">
+          <textarea name="message" id="message" cols="10" rows="5" placeholder="Type your message"></textarea>
+        </div>
+      </from>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ed8bd9da59.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/jacascript/script.js"></script>
-</body>
-
+  </body>
 </html>
