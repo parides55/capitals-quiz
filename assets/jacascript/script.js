@@ -16,14 +16,18 @@ const nextButton = document.getElementById('next-btn');
 const startGameButton = document.getElementById('start-game-btn');
 const menuIcon = document.getElementById('menu-btn');
 const closeIcon = document.getElementById('close-btn');
+const rulesButton = document.getElementById('rules-btn');
+const highscoreButton = document.getElementById('highscores-btn');
+const contactButton = document.getElementById('contact-btn');
 
 //Variables for the various sections
 const menuSelections = document.getElementById('menu-sections');
 const rulesArea = document.getElementById('rules-area');
+const highscoresArea = document.getElementById('highscores-area');
+const contactPageArea = document.getElementById('contact-page-area');
 const startUpArea = document.getElementById('startup-area');
 const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
-const contactPageArea = document.getElementById('contact-page-area');   
 
 //Event listeners
 startButton.addEventListener('click', setUsername);
@@ -92,6 +96,7 @@ window.onload = function() {
     menuSelections.classList.add('hide');
     closeIcon.classList.add('hide');
     contactPageArea.classList.add('hide');
+    highscoresArea.classList.add('hide');
 }
 
 /**
@@ -195,6 +200,7 @@ function displayMenu() {
     menuIcon.classList.add('hide');
     closeIcon.classList.remove('hide');
     contactPageArea.classList.add('hide');
+    highscoresArea.classList.add('hide');
 }
 
 /**
@@ -209,4 +215,5 @@ function hideMenu() {
     menuIcon.classList.remove('hide');
     closeIcon.classList.add('hide');
     contactPageArea.classList.add('hide');
+    highscoresArea.classList.add('hide');
 }
