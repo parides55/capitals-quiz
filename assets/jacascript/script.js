@@ -5,22 +5,24 @@ const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
 const maxQuestions = 3;
 const pointsCorrect = 5;
+let currentQuestion = {};
+let score = 0;
+let questionCounter = 0;
+let availableQuestions = [];
+
 //Variables for the buttons
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const startGameButton = document.getElementById('start-game-btn');
 const menuIcon = document.getElementById('menu-btn');
 const closeIcon = document.getElementById('close-btn');
+
 //Variables for the various sections
 const menuSelections = document.getElementById('menu-sections');
 const rulesArea = document.getElementById('rules-area');
 const startUpArea = document.getElementById('startup-area');
 const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
-let currentQuestion = {};
-let score = 0;
-let questionCounter = 0;
-let availableQuestions = [];
 
 //Event listeners
 startButton.addEventListener('click', setUsername);
@@ -179,6 +181,9 @@ function incrementScore(num) {
     yourScore.innerText = score;
 }
 
+/**
+ * Displays the menu sections.
+ */
 function displayMenu() {
     menuSelections.classList.remove('hide')
     rulesArea.classList.add('hide');
@@ -189,6 +194,9 @@ function displayMenu() {
     closeIcon.classList.remove('hide');
 }
 
+/**
+ * Hides the menu selections
+ */
 function hideMenu() {
     menuSelections.classList.add('hide');
     rulesArea.classList.add('hide');

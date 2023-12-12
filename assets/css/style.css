@@ -222,12 +222,15 @@ p {
 /* Styling the Conatct page*/
 form {
     width: 80%;
+    margin-left: 25%;
+    height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .inputs {
-    width: 80%;
+    width: 70%;
     padding: 5px;
     border: 2px solid #2F4858;
     border-radius: 5px;
@@ -236,19 +239,56 @@ form {
 #submit-btn {
     border: 2px solid #2F4858;
     border-radius: 5px;
-    width: 80%;
+    width: 70%;
     padding: 10px;
     background-color: transparent;
 }
 
 /* Media queries for smaller screens*/
-@media (max-width: 653px) {
+@media (max-width: 916px) {
+
+    /* Startup area */
     h1 {
         font-size: larger;
         text-shadow: 3px 3px 5px #656466;
+        line-height: 0px;
     }
 
+    #start-btn {
+        line-height: 30px;
+    }
+
+    /* Username Area */
+    .user-elements {
+        margin: 10px;
+        line-height: 20px;
+    }
+
+    /* Game Area */
     #game {
         width: 85%;
     }
+
+    h2 {
+        font-size: large;
+    }
+
+    .choice-container {
+        width: 70%;
+        margin: 3px 0;
+    }
+
+    #next-btn {
+        margin: 3px 0;
+    }
+
+    span {
+        position: relative;
+        bottom: 55%;
+    }
+/* Contact page */
+#submit-btn {
+    margin: 3px 0;
+}
+
 }
