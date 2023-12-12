@@ -118,6 +118,15 @@ p {
     justify-content: center;
 }
 
+#username-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+#username {
+    border: 1px solid #2F4858;
+}
+
 .user-elements {
     margin: 30px;
 }
@@ -180,6 +189,7 @@ p {
     background-color: transparent;
     border: none;
     font-size: large;
+    width: fit-content;
 }
 
 .choice-btn:hover:not([disabled]) {
