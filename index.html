@@ -39,6 +39,7 @@
     <button id="menu">
       <i class="fa-solid fa-list-ul" id="menu-icon"></i>
     </button>
+    <a href="index.html" id="home-btn"><i class="fa-solid fa-house" id="home-icon"></i></a>
 
     <section id="startup-area">
       <div class="container">
@@ -48,15 +49,49 @@
           <h1>QUIZ</h1>
         </div>
         <div>
-          <a href="quiz.html" id="start-btn">Let's Play!</a>
+          <button id="start-btn">Let's Play!</button>
         </div>
       </div>
     </section>
 
-    <script
-      src="https://kit.fontawesome.com/ed8bd9da59.js"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Username area-->
+    <section id="username-area">
+        <div class="container" id="username-container">
+            <p class="user-elements">Select a usrname and click on start</p>
+            <input class="user-elements" type="text" id="username" placeholder="username">
+            <button class="user-elements" id="start-game-btn">Start</button>
+        </div>
+    </section>
+    
+    <!--Game Area-->
+    <section id="game-area">
+        <div class="container" id="questions-container">
+            <div id="game">
+                <h2 id="question">Display Question</h2>
+                <div class="choice-container">
+                    <button class="choice-btn" data-number="1">Choice 1</button>
+                </div>
+                <div class="choice-container">
+                    <button class="choice-btn" data-number="2">Choice 2</button>
+                </div>
+                <div class="choice-container">
+                    <button class="choice-btn" data-number="3">Choice 3</button>
+                </div>
+                <div class="choice-container">
+                    <button class="choice-btn" data-number="4">Choice 4</button>
+                </div>
+                <div>
+                    <button id="next-btn">Next</button>
+                </div>
+                <div id="spans-div">
+                    <span>Your Score:<p id="score"></p></span>
+                    <span>Questions:<p id="counter"></p></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/ed8bd9da59.js" crossorigin="anonymous"></script>
     <script src="assets/jacascript/script.js"></script>
 
   </body>

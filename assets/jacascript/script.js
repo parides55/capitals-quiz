@@ -4,13 +4,21 @@ const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
 const maxQuestions = 3;
 const pointsCorrect = 5;
+const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
+const startGameButton = document.getElementById('start-game-btn');
+const startUpArea = document.getElementById('startup-area');
 const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
+//Event listeners
+startButton.addEventListener('click', setUsername);
+startGameButton.addEventListener('click', startQuiz);
+nextButton.addEventListener('click', getNewQuestion);
 
 //question bank stored in an array and each question as an object.
 const questions = [
@@ -60,11 +68,29 @@ const questions = [
     }
 ];
 
-//Event listener which activates the getNewQuestion function when the NEXT button is clicked.
-nextButton.addEventListener('click', getNewQuestion);
+//Opening the webpage this function will show the main page.
+window.onload = function() {
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+}
 
 
+
+
+/**
+ * Displays the page to set the username.
+ */
+function setUsername() {
+    usernameArea.classList.remove('hide');
+    startUpArea.classList.add('hide');
+}
+
+/**
+ * Removes the username area and displays the game area to begin the quiz.
+ */
 function startQuiz() {
+    usernameArea.classList.add('hide');
+    gameArea.classList.remove('hide');
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
@@ -146,4 +172,3 @@ function incrementScore(num) {
 }
 
 
-startQuiz();
