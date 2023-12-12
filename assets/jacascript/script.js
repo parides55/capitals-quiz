@@ -23,6 +23,7 @@ const rulesArea = document.getElementById('rules-area');
 const startUpArea = document.getElementById('startup-area');
 const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
+const contactPageArea = document.getElementById('contact-page-area');   
 
 //Event listeners
 startButton.addEventListener('click', setUsername);
@@ -90,6 +91,7 @@ window.onload = function() {
     gameArea.classList.add('hide');
     menuSelections.classList.add('hide');
     closeIcon.classList.add('hide');
+    contactPageArea.classList.add('hide');
 }
 
 /**
@@ -128,7 +130,7 @@ function getNewQuestion() {
     }
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        return window.location.assign('contact.html');
+        return window.location.assign('index.html');
     }
 
     questionCounter++;
@@ -192,6 +194,7 @@ function displayMenu() {
     gameArea.classList.add('hide');
     menuIcon.classList.add('hide');
     closeIcon.classList.remove('hide');
+    contactPageArea.classList.add('hide');
 }
 
 /**
@@ -205,4 +208,5 @@ function hideMenu() {
     gameArea.classList.add('hide');
     menuIcon.classList.remove('hide');
     closeIcon.classList.add('hide');
+    contactPageArea.classList.add('hide');
 }
