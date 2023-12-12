@@ -189,7 +189,7 @@ p {
     background-color: transparent;
     border: none;
     font-size: large;
-    width: fit-content;
+    width: 100%;
 }
 
 .choice-btn:hover:not([disabled]) {

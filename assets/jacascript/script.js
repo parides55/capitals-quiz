@@ -3,12 +3,14 @@ const question = document.getElementById('question');
 const choices = document.getElementsByClassName('choice-btn');
 const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
+const user = document.getElementById('username');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
+
 
 //Variables for the buttons
 const startButton = document.getElementById('start-btn');
@@ -56,7 +58,7 @@ const questions = [
         choice1: 'Athens',
         choice2: 'Thesaloniki',
         choice3: 'Crete',
-        choice4: 'Nicoisa',
+        choice4: 'Nicosia',
         answer: '1'
     },
 
@@ -89,7 +91,7 @@ const questions = [
 ];
 
 //When the webpage loads, this function will show the main page.
-window.onload = function() {
+window.onload = function () {
     rulesArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
@@ -97,7 +99,7 @@ window.onload = function() {
     closeIcon.classList.add('hide');
     contactPageArea.classList.add('hide');
     highscoresArea.classList.add('hide');
-}
+};
 
 /**
  * Displays the page to set the username.
@@ -105,18 +107,26 @@ window.onload = function() {
 function setUsername() {
     usernameArea.classList.remove('hide');
     startUpArea.classList.add('hide');
+    menuIcon.classList.add('hide');
 }
-
+input
 /**
  * Removes the username area and displays the game area to begin the quiz.
  */
 function startQuiz() {
-    usernameArea.classList.add('hide');
-    gameArea.classList.remove('hide');
-    questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
-    getNewQuestion();
+    if (user.value != "" && user.value != null && user.value != undefined) {
+        usernameArea.classList.add('hide');
+        gameArea.classList.remove('hide');
+        questionCounter = 0;
+        score = 0;
+        availableQuestions = [...questions];
+        console.log(user.value);
+        getNewQuestion();
+    } else {
+        user.setCustomValidity("");
+        alert('Please provide a username to start');
+    }
+
 }
 
 /**
@@ -125,7 +135,7 @@ function startQuiz() {
  * Removes the previous correct/wrong classes from the selections, eanbles the buttons again
  * and removes the NEXT button until a new selection is made.
  */
-function getNewQuestion() {    
+function getNewQuestion() {
     nextButton.style.display = 'none';
 
     for (choice of choices) {
@@ -135,7 +145,8 @@ function getNewQuestion() {
     }
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
-        return window.location.assign('index.html');
+        highscoresArea.classList.remove('hide');
+        gameArea.classList.add('hide');
     }
 
     questionCounter++;
@@ -163,13 +174,13 @@ function checkAnswer(event) {
 
     if (showCorrect) {
         this.parentElement.classList.add('correct-answer');
-        incrementScore(pointsCorrect);  
+        incrementScore(pointsCorrect);
     } else {
-        this.parentElement.classList.add('wrong-answer'); 
+        this.parentElement.classList.add('wrong-answer');
     }
 
     for (choice of choices) {
-        
+
         if (choice.getAttribute('data-number') === currentQuestion.answer) {
             choice.parentElement.classList.add('correct-answer');
         }
@@ -192,7 +203,7 @@ function incrementScore(num) {
  * Displays the menu sections.
  */
 function displayMenu() {
-    menuSelections.classList.remove('hide')
+    menuSelections.classList.remove('hide');
     rulesArea.classList.add('hide');
     startUpArea.classList.add('hide');
     usernameArea.classList.add('hide');
