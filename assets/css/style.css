@@ -63,6 +63,7 @@ h1 {
     padding: 10px;
     text-decoration: none;
     font-size: xx-large;
+    background-color: transparent;
 }
 
 #start-btn:hover {
@@ -73,6 +74,14 @@ h1 {
 
 
 /* Styling the quiz page*/
+#username-container {
+    justify-content: center;
+}
+
+.user-elements {
+    margin: 30px;
+}
+
 #home-btn {
     font-size: x-large;
     text-decoration: none;

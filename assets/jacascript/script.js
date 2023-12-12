@@ -5,6 +5,8 @@ const questionNumber = document.getElementById('counter');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 const nextButton = document.getElementById('next-btn');
+const usernameArea = document.getElementById('username-area');
+const gameArea = document.getElementById('game-area');
 let currentQuestion = {};
 let score = 0;
 let questionCounter = 0;
@@ -108,23 +110,25 @@ for (choice of choices) {
 }
 
 function checkAnswer(event) {
-    for (choice of choices) {
-        const selectedChoice = event.target;
-        selectedAnswer = selectedChoice.getAttribute('data-number');
-        const displayCorrect = 
-        choice.disabled = true;
-    }
+    const selectedChoice = event.target;
+    const showCorrect = selectedChoice.dataset.number === currentQuestion.answer;
 
-    if (selectedAnswer === currentQuestion.answer) {
+    if (showCorrect) {
         this.parentElement.classList.add('correct-answer');
         incrementScore(pointsCorrect);  
     } else {
-        this.parentElement.classList.add('wrong-answer');
+        this.parentElement.classList.add('wrong-answer'); 
     }
 
+    for (choice of choices) {
+        
+        if (choice.getAttribute('data-number') === currentQuestion.answer) {
+            choice.parentElement.classList.add('correct-answer');
+        }
 
+        choice.disabled = true;
+    }
 
-    
     nextButton.style.display = 'block';
 
 }
