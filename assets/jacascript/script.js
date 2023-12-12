@@ -32,6 +32,9 @@ const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
 
 //Event listeners
+rulesButton.addEventListener('click', showRules);
+highscoreButton.addEventListener('click', showHighscores);
+contactButton.addEventListener('click', showContactPage);
 startButton.addEventListener('click', setUsername);
 startGameButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', getNewQuestion);
@@ -109,7 +112,7 @@ function setUsername() {
     startUpArea.classList.add('hide');
     menuIcon.classList.add('hide');
 }
-input
+input;
 /**
  * Removes the username area and displays the game area to begin the quiz.
  */
@@ -147,6 +150,7 @@ function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         highscoresArea.classList.remove('hide');
         gameArea.classList.add('hide');
+        menuIcon.classList.remove('hide');
     }
 
     questionCounter++;
@@ -226,5 +230,50 @@ function hideMenu() {
     menuIcon.classList.remove('hide');
     closeIcon.classList.add('hide');
     contactPageArea.classList.add('hide');
+    highscoresArea.classList.add('hide');
+}
+
+/**
+ * Displays the Rules page
+ */
+function showRules() {
+    menuSelections.classList.add('hide');
+    rulesArea.classList.remove('hide');
+    startUpArea.classList.add('hide');
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+    menuIcon.classList.remove('hide');
+    closeIcon.classList.add('hide');
+    contactPageArea.classList.add('hide');
+    highscoresArea.classList.add('hide');
+}
+
+/**
+ * Displays the page with the 3 highest scores
+ */
+function showHighscores() {
+    menuSelections.classList.add('hide');
+    rulesArea.classList.add('hide');
+    startUpArea.classList.add('hide');
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+    menuIcon.classList.remove('hide');
+    closeIcon.classList.add('hide');
+    contactPageArea.classList.add('hide');
+    highscoresArea.classList.remove('hide');
+}
+
+/**
+ * Displays the page with the Contact form 
+ */
+function showContactPage() {
+    menuSelections.classList.add('hide');
+    rulesArea.classList.add('hide');
+    startUpArea.classList.add('hide');
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+    menuIcon.classList.remove('hide');
+    closeIcon.classList.add('hide');
+    contactPageArea.classList.remove('hide');
     highscoresArea.classList.add('hide');
 }
