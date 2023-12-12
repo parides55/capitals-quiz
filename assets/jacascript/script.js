@@ -12,6 +12,7 @@ let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
+//question bank stored in an array and each question as an object.
 const questions = [
     {
         question: 'What is the capital of Cyprus',
@@ -59,6 +60,7 @@ const questions = [
     }
 ];
 
+//Event listener which activates the getNewQuestion function when the NEXT button is clicked.
 nextButton.addEventListener('click', getNewQuestion);
 
 
@@ -71,12 +73,11 @@ function startQuiz() {
 
 /**
  * Get a new question randomly form the questionBank and remove that question from the available ones
- * and incrementes the number of questions left.
- * Removes the NEXT button until a new selection is made.
+ * and incremente the number of questions left.
+ * Removes the previous correct/wrong classes from the selections, eanbles the buttons again
+ * and removes the NEXT button until a new selection is made.
  */
-function getNewQuestion() {
-
-    
+function getNewQuestion() {    
     nextButton.style.display = 'none';
 
     for (choice of choices) {
@@ -104,11 +105,15 @@ function getNewQuestion() {
     availableQuestions.splice(questionIndex, 1);
 }
 
-//Checks the answer when a choice is clicked and displays the next button.
+//Event Listener to activate the checkAnswer function when a choice button is clicked.
 for (choice of choices) {
     choice.addEventListener('click', checkAnswer);
 }
 
+/**
+ * Checks the correct answer and if the wrong is selected displays the correct one.
+ * Also, disables the buttons for further selections 
+ */
 function checkAnswer(event) {
     const selectedChoice = event.target;
     const showCorrect = selectedChoice.dataset.number === currentQuestion.answer;

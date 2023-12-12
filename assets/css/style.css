@@ -192,7 +192,7 @@ form {
 }
 
 /* Media queries for smaller screens*/
-@media (max-width: 414px) {
+@media (max-width: 653px) {
     h1 {
         font-size: larger;
         text-shadow: 3px 3px 5px #656466;
