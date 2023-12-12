@@ -1,12 +1,19 @@
+//Variables
 const question = document.getElementById('question');
 const choices = document.getElementsByClassName('choice-btn');
 const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
 const maxQuestions = 3;
 const pointsCorrect = 5;
+//Variables for the buttons
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const startGameButton = document.getElementById('start-game-btn');
+const menuIcon = document.getElementById('menu-btn');
+const closeIcon = document.getElementById('close-btn');
+//Variables for the various sections
+const menuSelections = document.getElementById('menu-sections');
+const rulesArea = document.getElementById('rules-area');
 const startUpArea = document.getElementById('startup-area');
 const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
@@ -19,8 +26,14 @@ let availableQuestions = [];
 startButton.addEventListener('click', setUsername);
 startGameButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', getNewQuestion);
+menuIcon.addEventListener('click', displayMenu);
+closeIcon.addEventListener('click', hideMenu);
+//Event Listener to activate the checkAnswer function when a choice button is clicked.
+for (choice of choices) {
+    choice.addEventListener('click', checkAnswer);
+}
 
-//question bank stored in an array and each question as an object.
+//Question bank stored in an array and each question is an object.
 const questions = [
     {
         question: 'What is the capital of Cyprus',
@@ -68,14 +81,14 @@ const questions = [
     }
 ];
 
-//Opening the webpage this function will show the main page.
+//When the webpage loads, this function will show the main page.
 window.onload = function() {
+    rulesArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
+    menuSelections.classList.add('hide');
+    closeIcon.classList.add('hide');
 }
-
-
-
 
 /**
  * Displays the page to set the username.
@@ -131,11 +144,6 @@ function getNewQuestion() {
     availableQuestions.splice(questionIndex, 1);
 }
 
-//Event Listener to activate the checkAnswer function when a choice button is clicked.
-for (choice of choices) {
-    choice.addEventListener('click', checkAnswer);
-}
-
 /**
  * Checks the correct answer and if the wrong is selected displays the correct one.
  * Also, disables the buttons for further selections 
@@ -171,4 +179,22 @@ function incrementScore(num) {
     yourScore.innerText = score;
 }
 
+function displayMenu() {
+    menuSelections.classList.remove('hide')
+    rulesArea.classList.add('hide');
+    startUpArea.classList.add('hide');
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+    menuIcon.classList.add('hide');
+    closeIcon.classList.remove('hide');
+}
 
+function hideMenu() {
+    menuSelections.classList.add('hide');
+    rulesArea.classList.add('hide');
+    startUpArea.classList.remove('hide');
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+    menuIcon.classList.remove('hide');
+    closeIcon.classList.add('hide');
+}

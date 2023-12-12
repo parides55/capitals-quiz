@@ -57,14 +57,15 @@ h1 {
     background-color: transparent;
 }
 
-#start-btn:hover {
+#start-btn:hover,
+#start-game-btn:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px #2F4858;
     font-size: xx-large;
 }
 
-/* Styling the mune selections */
-#menu {
+/* Styling the menu selections */
+.menu {
     position: absolute;
     top: 10%;
     right: 10%;
@@ -73,7 +74,12 @@ h1 {
     font-size: xx-large;
 }
 
-#menu:hover {
+#close-icon {
+    position: relative;
+    right: 150%;
+}
+
+.menu:hover {
     font-size: xxx-large;
     cursor: pointer;
 }
@@ -99,6 +105,12 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+/* Styling the Rules page */
+p {
+    margin: 0 30px;
+    font-size: large;
 }
 
 /* Styling the quiz page */
