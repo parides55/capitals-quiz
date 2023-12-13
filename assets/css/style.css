@@ -109,10 +109,19 @@ ul {
     list-style-type: none;
 }
 
-/* Styling the Rules page */
-p {
-    margin: 0 30px;
+/* Styling the Instructions page */
+#instructions-text {
     font-size: large;
+}
+
+p {
+    margin: -15px 15% -15px 15%;
+    text-align: left;
+}
+
+code {
+    border: 1px solid #2F4858;
+
 }
 
 /* Styling the quiz page */
@@ -122,11 +131,13 @@ p {
 
 #username-text {
     text-align: center;
+    font-size: larger;
     font-weight: bold;
 }
 
 #username {
     border: 1px solid #2F4858;
+    padding: 5px;
 }
 
 .user-elements {
@@ -213,6 +224,7 @@ p {
 
 #game p {
     text-align: center;
+    padding-top: 15px;
 }
 
 #spans-div {
@@ -251,6 +263,7 @@ form {
     margin: -100px 0px -100px -35px;
     font-size: xx-large;
     font-weight: bolder;
+    text-align: center;
 }
 
 #score-list {
@@ -261,6 +274,11 @@ form {
 #score-list-places {
     font-size: larger;
     font-weight: bold;
+}
+
+#show-your-score {
+    font-size: x-large;
+    text-align: center;
 }
 
 /* Media queries for smaller screens*/
@@ -279,7 +297,7 @@ form {
 
     /* Username Area */
     .user-elements {
-        margin: 10px;
+        margin: 20px;
         line-height: 20px;
     }
 

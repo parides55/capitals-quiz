@@ -22,14 +22,14 @@ const playAgainButton = document.getElementById('play-again-btn');
 const startGameButton = document.getElementById('start-game-btn');
 const menuIcon = document.getElementById('menu-btn');
 const closeIcon = document.getElementById('close-btn');
-const rulesButton = document.getElementById('rules-btn');
+const instructionsButton = document.getElementById('instructions-btn');
 const highscoreButton = document.getElementById('highscores-btn');
 const contactButton = document.getElementById('contact-btn');
 
 
 //Variables for the various sections
 const menuSelections = document.getElementById('menu-sections');
-const rulesArea = document.getElementById('rules-area');
+const instructionsArea = document.getElementById('instructions-area');
 const highscoresArea = document.getElementById('highscores-area');
 const contactPageArea = document.getElementById('contact-page-area');
 const startUpArea = document.getElementById('startup-area');
@@ -37,7 +37,7 @@ const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
 
 //Event listeners
-rulesButton.addEventListener('click', showRules);
+instructionsButton.addEventListener('click', showRules);
 highscoreButton.addEventListener('click', showHighscores);
 contactButton.addEventListener('click', showContactPage);
 letsPlayButton.addEventListener('click', setUsername);
@@ -101,7 +101,7 @@ const questions = [
 
 //When the webpage loads, this function will show the main page.
 window.onload = function () {
-    rulesArea.classList.add('hide');
+    instructionsArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
     menuSelections.classList.add('hide');
@@ -219,7 +219,7 @@ function incrementScore(num) {
  */
 function displayMenu() {
     menuSelections.classList.remove('hide');
-    rulesArea.classList.add('hide');
+    instructionsArea.classList.add('hide');
     startUpArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
@@ -234,7 +234,7 @@ function displayMenu() {
  */
 function hideMenu() {
     menuSelections.classList.add('hide');
-    rulesArea.classList.add('hide');
+    instructionsArea.classList.add('hide');
     startUpArea.classList.remove('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
@@ -249,7 +249,7 @@ function hideMenu() {
  */
 function showRules() {
     menuSelections.classList.add('hide');
-    rulesArea.classList.remove('hide');
+    instructionsArea.classList.remove('hide');
     startUpArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
@@ -264,7 +264,7 @@ function showRules() {
  */
 function showHighscores() {
     menuSelections.classList.add('hide');
-    rulesArea.classList.add('hide');
+    instructionsArea.classList.add('hide');
     startUpArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
@@ -281,7 +281,7 @@ function showHighscores() {
  */
 function showContactPage() {
     menuSelections.classList.add('hide');
-    rulesArea.classList.add('hide');
+    instructionsArea.classList.add('hide');
     startUpArea.classList.add('hide');
     usernameArea.classList.add('hide');
     gameArea.classList.add('hide');
