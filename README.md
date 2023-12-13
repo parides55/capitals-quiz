@@ -1,8 +1,8 @@
 # **What's the ?CAPITAL?**
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience.
+<hr>
 
-For example, Love Maths is a site that hopes to demonstrate how pure JavaScript works in a real-world context. The site will be targeted toward people who not only love to implement more advanced JavaScript concepts but also maths. Love Maths is a fully responsive JavaScript maths game that will allow users to add, subtract, multiply and divide numbers.
+The **What's the ?CAPITAL?** game it's an online quiz that is looking to give its users a fun way to get to know the capitals of many countries in the world. Also, this game shows what you can achieve with JavScript, since the whole website runs with the help of JavaScript, and it's fully responsive with any device. The quiz has some main features to make the game easy to use and provide its users with a feedback regarding the final results and their progress.   
 
 ![Responsice Mockup](media/love_maths_mockup.png)
 
