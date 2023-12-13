@@ -48,7 +48,8 @@ h1 {
 }
 
 #start-btn,
-#start-game-btn {
+#start-game-btn,
+#play-again-btn {
     border: 2px solid #2F4858;
     border-radius: 5px;
     padding: 10px;
@@ -58,7 +59,8 @@ h1 {
 }
 
 #start-btn:hover,
-#start-game-btn:hover {
+#start-game-btn:hover,
+#play-again-btn:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px #2F4858;
     font-size: xx-large;

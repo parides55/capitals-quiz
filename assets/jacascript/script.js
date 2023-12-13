@@ -4,6 +4,7 @@ const choices = document.getElementsByClassName('choice-btn');
 const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
 const user = document.getElementById('username');
+const showYourScore = document.getElementById('show-your-score');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 let currentQuestion = {};
@@ -15,12 +16,14 @@ let availableQuestions = [];
 //Variables for the buttons
 const startButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
+const playAgainButton = document.getElementById('play-again-btn');
 const startGameButton = document.getElementById('start-game-btn');
 const menuIcon = document.getElementById('menu-btn');
 const closeIcon = document.getElementById('close-btn');
 const rulesButton = document.getElementById('rules-btn');
 const highscoreButton = document.getElementById('highscores-btn');
 const contactButton = document.getElementById('contact-btn');
+
 
 //Variables for the various sections
 const menuSelections = document.getElementById('menu-sections');
@@ -38,6 +41,7 @@ contactButton.addEventListener('click', showContactPage);
 startButton.addEventListener('click', setUsername);
 startGameButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', getNewQuestion);
+playAgainButton.addEventListener('click', setUsername);
 menuIcon.addEventListener('click', displayMenu);
 closeIcon.addEventListener('click', hideMenu);
 //Event Listener to activate the checkAnswer function when a choice button is clicked.
@@ -111,8 +115,9 @@ function setUsername() {
     usernameArea.classList.remove('hide');
     startUpArea.classList.add('hide');
     menuIcon.classList.add('hide');
+    highscoresArea.classList.add('hide');
 }
-input;
+
 /**
  * Removes the username area and displays the game area to begin the quiz.
  */
@@ -123,7 +128,6 @@ function startQuiz() {
         questionCounter = 0;
         score = 0;
         availableQuestions = [...questions];
-        console.log(user.value);
         getNewQuestion();
     } else {
         user.setCustomValidity("");
@@ -149,6 +153,8 @@ function getNewQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         highscoresArea.classList.remove('hide');
+        showYourScore.innerText = `${user.value} your score was: ${score}`;
+        playAgainButton.classList.remove('hide');
         gameArea.classList.add('hide');
         menuIcon.classList.remove('hide');
     }
@@ -261,6 +267,7 @@ function showHighscores() {
     closeIcon.classList.add('hide');
     contactPageArea.classList.add('hide');
     highscoresArea.classList.remove('hide');
+    playAgainButton.classList.add('hide');
 }
 
 /**
@@ -277,3 +284,4 @@ function showContactPage() {
     contactPageArea.classList.remove('hide');
     highscoresArea.classList.add('hide');
 }
+
