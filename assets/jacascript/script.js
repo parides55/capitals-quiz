@@ -5,6 +5,8 @@ const yourScore = document.getElementById('score');
 const questionNumber = document.getElementById('counter');
 const user = document.getElementById('username');
 const showYourScore = document.getElementById('show-your-score');
+const highscores = JSON.parse(localStorage.getItem('highscores')) || [];
+const scoreList = document.getElementById('score-list');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 let currentQuestion = {};
@@ -159,7 +161,7 @@ function getNewQuestion() {
         playAgainButton.classList.remove('hide');
         gameArea.classList.add('hide');
         menuIcon.classList.remove('hide');
-        displayHighscores();
+        storeHighscores();
     }
 
     questionCounter++;
@@ -271,6 +273,7 @@ function showHighscores() {
     contactPageArea.classList.add('hide');
     highscoresArea.classList.remove('hide');
     playAgainButton.classList.add('hide');
+    displayHighscores();
 }
 
 /**
@@ -291,19 +294,27 @@ function showContactPage() {
 /**
  * Stores the scores in the Local Storage of the Browser and sorts them.
  */
-function displayHighscores() {
+function storeHighscores() {
 
-    const highscores = JSON.parse(localStorage.getItem('highscores')) || [];
-
-    const playerScore = {
+    const userScore = {
         score: score,
         name: user.value
     };
 
-    highscores.push(playerScore);
+    highscores.push(userScore);
     highscores.sort((a, b) => b.score - a.score);
     highscores.splice(3);
 
     localStorage.setItem('highscores', JSON.stringify(highscores));
+
+    displayHighscores();
+
+}
+
+function displayHighscores() {
+
+    scoreList.innerHTML = highscores.map(userScore => {
+        return `<li class="score-list-places">${userScore.name} scored ${userScore.score}</li>`
+    }).join('');
 }
 
