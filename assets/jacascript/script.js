@@ -14,7 +14,7 @@ let availableQuestions = [];
 
 
 //Variables for the buttons
-const startButton = document.getElementById('start-btn');
+const letsPlayButton = document.getElementById('start-btn');
 const nextButton = document.getElementById('next-btn');
 const playAgainButton = document.getElementById('play-again-btn');
 const startGameButton = document.getElementById('start-game-btn');
@@ -38,7 +38,7 @@ const gameArea = document.getElementById('game-area');
 rulesButton.addEventListener('click', showRules);
 highscoreButton.addEventListener('click', showHighscores);
 contactButton.addEventListener('click', showContactPage);
-startButton.addEventListener('click', setUsername);
+letsPlayButton.addEventListener('click', setUsername);
 startGameButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', getNewQuestion);
 playAgainButton.addEventListener('click', setUsername);
@@ -122,11 +122,13 @@ function setUsername() {
  * Removes the username area and displays the game area to begin the quiz.
  */
 function startQuiz() {
+
     if (user.value != "" && user.value != null && user.value != undefined) {
         usernameArea.classList.add('hide');
         gameArea.classList.remove('hide');
         questionCounter = 0;
         score = 0;
+        yourScore.innerText = '0';
         availableQuestions = [...questions];
         getNewQuestion();
     } else {
@@ -153,10 +155,11 @@ function getNewQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         highscoresArea.classList.remove('hide');
-        showYourScore.innerText = `${user.value} your score was: ${score}`;
+        showYourScore.innerText = `${user.value} your scored ${score} points`;
         playAgainButton.classList.remove('hide');
         gameArea.classList.add('hide');
         menuIcon.classList.remove('hide');
+        displayHighscores();
     }
 
     questionCounter++;
@@ -283,5 +286,24 @@ function showContactPage() {
     closeIcon.classList.add('hide');
     contactPageArea.classList.remove('hide');
     highscoresArea.classList.add('hide');
+}
+
+/**
+ * Stores the scores in the Local Storage of the Browser and sorts them.
+ */
+function displayHighscores() {
+
+    const highscores = JSON.parse(localStorage.getItem('highscores')) || [];
+
+    const playerScore = {
+        score: score,
+        name: user.value
+    };
+
+    highscores.push(playerScore);
+    highscores.sort((a, b) => b.score - a.score);
+    highscores.splice(3);
+
+    localStorage.setItem('highscores', JSON.stringify(highscores));
 }
 
