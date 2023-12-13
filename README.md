@@ -1,29 +1,41 @@
 # **What's the ?CAPITAL?**
 
+The **What's the ?CAPITAL?** game it's an online quiz that is looking to give its users a fun way to get to know the capitals of many countries in the world. Also, this game shows what you can achieve with JavScript, since the whole website runs with the help of JavaScript, and it's fully responsive with any device. The quiz has a 3 color gradient background, which is added to all the areas of the game, to add more interest and attract the user, and with the features it has makes the game easy to use and provide its users with a feedback regarding the final results and their progress.
+
+<img src="images/responsive-mockup-optimized.jpg">
+
 <hr>
-
-The **What's the ?CAPITAL?** game it's an online quiz that is looking to give its users a fun way to get to know the capitals of many countries in the world. Also, this game shows what you can achieve with JavScript, since the whole website runs with the help of JavaScript, and it's fully responsive with any device. The quiz has some main features to make the game easy to use and provide its users with a feedback regarding the final results and their progress.   
-
-![Responsice Mockup](media/love_maths_mockup.png)
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The features available in the game are a home button, which always will bring you to the main landing page, a menu icon, which provides selections to the Instructions of the game, to view the 3 highest scores and to access the contact form, buttons that are designed to give a nice flow and control to the user to start the game, go to the next question or play again. Each features is designed to be easily identified and understoond and give to the user an easy way to navigate around the game. 
 
 ### Existing Features
 
-- __The Love Maths Logo and Heading__
+- __The Landing page__
 
-  - Featured at the top of the page, the Love Maths logo and heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
+  - The main Landing page which has in the middle a big tittle with the name of the game which attempts to make clear what the quiz is about.
+  - Below the title is a big "Lets's Play!" button which attempts to attract the attention of the user to start playing the game.
 
-![Logo](media/love_maths_logo.png)
+<img src="images/main-page-optimized.jpg">
 
-- __The Game Area__
+- __The Home Button__
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons.
+  - The Home Button is always visible in the left top corner and is the only way to come back to the main landing page and start another game.
+  - Also, is a way to stop your current game and start another one, since its available throughout the duration of the game in the left top conrer.
 
-![Game](media/love_maths_icons.png)
+<img src="images/home-button-optimized.jpg">
+
+- **The Menu Button**
+
+  - The Menu Button, which is an unordered list icon, once pressed it will give three selections for the user. To view the Instructions of the game, the three Highest Scores and to access the Contact form.
+  - Once the selections are displayed the unordered list icon is replaced with a cross icon to indicated that when the user clicks on it the selections will be removed.
+  - The three selections have a hoover effect as well to clearly indicate to the user which one is about to be selected. 
+
+<img src="images/menu-button-optimized.jpg">
+
+<img scc="images/main-page-optimized.jpg">
+
 
 - __The Question section__
 
