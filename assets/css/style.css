@@ -105,7 +105,7 @@ ul {
     height: 25%;
 }
 
-li {
+#buttons-list {
     list-style-type: none;
 }
 
@@ -249,6 +249,18 @@ form {
 /* Styling the Highscore Area */
 .highscore-divs {
     margin: -100px 0px -100px -35px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+#score-list {
+    font-size: large;
+    font-weight: bold;
+}
+
+#score-list-places {
+    font-size: larger;
+    font-weight: bold;
 }
 
 /* Media queries for smaller screens*/
