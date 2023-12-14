@@ -1,3 +1,5 @@
+[CLick here to see the webpage](https://parides55.github.io/capitals-quiz/)
+
 # **What's the ?CAPITAL?**
 
 The **What's the ?CAPITAL?** game it's an online quiz that is looking to give its users a fun way to get to know the capitals of many countries in the world. Also, this game shows what you can achieve with JavScript, since the whole website runs with the help of JavaScript, and it's fully responsive with any device. The quiz has a 3 color gradient background, which is added to all the areas of the game, to add more interest and attract the user, and with the features it has makes the game easy to use and provide its users with a feedback regarding the final results and their progress.
@@ -5,6 +7,14 @@ The **What's the ?CAPITAL?** game it's an online quiz that is looking to give it
 <img src="images/responsive-mockup-optimized.jpg">
 
 <hr>
+<details>
+<summary><b>Table of Content</b>(click to open)</summary> 
+
+  -[Feathures](#features)<br>
+  -[Features left to implement](#features-left-to-implement)<br>
+  -[Testing](#testing)<br>
+  
+</details>
 
 ## Features
 
@@ -34,7 +44,7 @@ The features available in the game are a home button, which always will bring yo
 
 <img src="images/menu-button-optimized.jpg">
 
-<img scc="images/main-page-optimized.jpg">
+<img scc="images/menu-selections-optimized.jpg">
 
 
 - __The Question section__
