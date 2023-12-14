@@ -18,27 +18,27 @@
   <body>
 
     <!--Menu Button-->
-    <button class="menu" id="menu-btn">
+    <button class="menu" id="menu-btn" aria-label="Menu Button. Displays the menu selections">
       <i class="fa-solid fa-list-ul" id="menu-icon"></i>
     </button>
-    <button class="menu" id="close-btn">
+    <button class="menu" id="close-btn" aria-label="Menu Button. Hides the menu selections">
         <i class="fa-solid fa-x" id="close-icon"></i>
     </button>
-    <a href="index.html" id="home-btn"><i class="fa-solid fa-house" id="home-icon"></i></a>
+    <a href="index.html" id="home-btn" aria-label="Home Button. Returns the user to the main page."><i class="fa-solid fa-house" id="home-icon"></i></a>
 
     <!-- Menu selections from the burger icon-->
-    <section id="menu-sections">
+    <section id="menu-sections" aria-label="The menu selections">
         <div class="container">
             <ul>
-                <li class="buttons-list"><button class="menu-btn" id="instructions-btn">Instructions</button></li>
-                <li class="buttons-list"><button class="menu-btn" id="highscores-btn">Highscores</button></li>
-                <li class="buttons-list"><button class="menu-btn" id="contact-btn">Contact</button></li>
+                <li class="buttons-list"><button class="menu-btn" id="instructions-btn" aria-label="Instruction Button. Displays the Instructions page">Instructions</button></li>
+                <li class="buttons-list"><button class="menu-btn" id="highscores-btn" aria-label="Instruction Button. Displays the Highscores page">Highscores</button></li>
+                <li class="buttons-list"><button class="menu-btn" id="contact-btn" aria-label="Instruction Button. Displays the Contact page">Contact</button></li>
             </ul>
         </div>
     </section>
 
     <!-- Instructions of the game-->
-    <section id="instructions-area">
+    <section id="instructions-area" aria-label="The instructions area">
         <div id="instructions-container">
             <div class="paragraph-divs"><h1 id="instructions-text">Instructions</h1></div>
             <div class="paragraph-divs"><p><i class="fa-solid fa-flag"></i> This quiz is about the capitals of many countries in the world. 
@@ -60,7 +60,7 @@
     </section>
 
     <!-- Highscores Area-->
-    <section id="highscores-area">
+    <section id="highscores-area" aria-label="The highscores area">
         <div class="container">
             <div class="highscore-divs">The highest 3 scores are:</div>
             <div class="highscore-divs"> 
@@ -74,7 +74,7 @@
     </section>
 
     <!-- Main page when the webpage loads -->
-    <section id="startup-area">
+    <section id="startup-area" aria-label="The main landing page">
       <div class="container">
         <div id="headings-div">
             <h1>What's the</h1>
@@ -88,33 +88,33 @@
     </section>
 
     <!-- Username area-->
-    <section id="username-area">
+    <section id="username-area" aria-label="The username area">
         <div class="container" id="username-container">
             <label for="username" class="user-elements" id="username-text">Select a username <br>and<br> click on start</label>
             <input class="user-elements" type="text" id="username" placeholder="username" required autocomplete="on">
-            <button class="user-elements" id="start-game-btn" type="submit">Start</button>
+            <button class="user-elements" id="start-game-btn" type="submit" aria-label="The start button. After you choose a username click it to start the game.">Start</button>
         </div>
     </section>
     
     <!--Game Area-->
-    <section id="game-area">
+    <section id="game-area" aria-label="The game area">
         <div class="container" id="questions-container">
             <div id="game">
                 <h2 id="question">Display Question</h2>
                 <div class="choice-container">
-                    <button class="choice-btn" data-number="1">Choice 1</button>
+                    <button class="choice-btn" data-number="1" aria-label="Choice 1">Choice 1</button>
                 </div>
                 <div class="choice-container">
-                    <button class="choice-btn" data-number="2">Choice 2</button>
+                    <button class="choice-btn" data-number="2" aria-label="Choice 2">Choice 2</button>
                 </div>
                 <div class="choice-container">
-                    <button class="choice-btn" data-number="3">Choice 3</button>
+                    <button class="choice-btn" data-number="3" aria-label="Choice 3">Choice 3</button>
                 </div>
                 <div class="choice-container">
-                    <button class="choice-btn" data-number="4">Choice 4</button>
+                    <button class="choice-btn" data-number="4" aria-label="Choice 4">Choice 4</button>
                 </div>
                 <div>
-                    <button id="next-btn">Next</button>
+                    <button id="next-btn" aria-label="The Next button. Click it to go to the next question.">Next</button>
                 </div>
                 <div id="spans-div">
                     <span>Your Score:<p id="score"></p></span>
@@ -125,7 +125,7 @@
     </section>
 
     <!--Contact page area-->
-    <section id="contact-page-area">
+    <section id="contact-page-area" aria-label="The contact page">
         <div class="container">
             <form id="contact-form">
                 <label for="fullname">First Name</label>
@@ -134,17 +134,17 @@
                 <input class="inputs" type="email" id="email" placeholder="youremail@email.com" autocomplete="on" required/>
                 <label for="message">Message</label>
                 <textarea class="inputs" name="message" id="message" cols="25" rows="5" placeholder="Type your message" autocomplete="on" required></textarea>
-                <button id="submit-btn">Submit</button>
+                <button id="submit-btn" aria-label="Submit button. Click it ot submit your form.">Submit</button>
             </form>
         </div>
     </section>
 
     <!-- Thank you page-->
-    <section id="thankyou-area">
-        <div class="container">
+    <section id="thankyou-area" aria-label="Thank you page">
+        <div id="thank-you-container">
             <div id="display-message"></div>
             <div id="displayed-text">Thank you for you message!</div>
-            <div>Press the <i class="fa-solid fa-house"></i> icon to return to the main page!</div>
+            <div id="home-icon-text"> To return to the main page press <br><i class="fa-solid fa-house"></i></div>
         </div>
     </section>
 

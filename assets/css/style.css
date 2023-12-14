@@ -110,7 +110,8 @@ ul {
 }
 
 /* Styling the Instructions page */
-#instructions-container {
+#instructions-container,
+#thank-you-container {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -287,6 +288,14 @@ form {
     font-weight: bold;
 }
 
+ #display-message {
+     text-align: center;
+ }
+
+ #home-icon-text {
+     text-align: center;
+ }
+
 /* Styling the Highscore Area */
 .highscore-divs {
     margin: -70px 0px -100px -35px;
@@ -389,8 +398,6 @@ form {
     }
 }
 
-
-
 @media (max-width: 432px) {
     #instructions-container {
         height: 160vh;
@@ -406,5 +413,14 @@ form {
     #instructions-container {
         height: 265vh;
         width: 100vw;
+    }
+
+    #thank-you-container {
+        margin: 0px;
+    }
+
+    #displayed-text {
+        position: relative;
+        left: 10%;
     }
 }
