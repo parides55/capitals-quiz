@@ -2,7 +2,7 @@
 
 # **What's the CAPITAL?**
 
-The **What's the CAPITAL?** game it's an online quiz that is looking to give its users a fun way to get to know the capitals of many countries in the world. Also, this game shows what you can achieve with JavScript, since the whole website runs with the help of JavaScript, and it's fully responsive with any device. The quiz has a 3 color gradient background, which is added to all the areas of the game, to add more interest and attract the user, and with the features it has makes the game easy to use and provide its users with a feedback regarding the final results and their progress.
+The **What's the CAPITAL?** game it's an online quiz that is looking to give its users a fun way to get to know the capitals of many countries in the world. Also, this game shows what you can achieve with JavaScript, since the whole website runs with the help of JavaScript, and it's fully responsive with any device. The quiz has a 3 color gradient background, which is added to all the areas of the game, to add more interest and attract the user, and with the features it has, it makes the game easy to use and provide its users with a feedback regarding the final result.
 
 <img src="images/responsive-mockup-optimized.jpg">
 
@@ -30,7 +30,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
   - The main Landing page which has in the middle a big tittle with the name of the game which attempts to make clear what the quiz is about.
   - Below the title is a big "Lets's Play!" button which attempts to attract the attention of the user to start playing the game.
 
-<img src="images/main-page-optimized.jpg">
+<img src="images/landing-page-optimized.jpg">
 
 - **The Home Button**
 
@@ -61,17 +61,25 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
   - This section will allow the users to see how many points they scored and see if they made it to the top 3.
   - The page can be selected before the game starts through the menu selections, which in that case only the top 3 scores will be shown.
-  - It will also be shown once the game has finished and in this case the score of the current user will be shown below the top 3 scores. 
-  - Below the user's score a Play again button will appear to prompt, either the same user or a different one, to play again. Once this button is clicked it will take you to the username page.
-  - Also, the menu icon remains available in this page offering 
+  - It will also be shown once the game has finished and in this case the score of the current user will be shown below the top 3 scores.
+  - Below the user's score a Play Again button will appear to prompt, either the same user or a different one, to play again. Once this button is clicked it will take you to the username page.
+  - Also, the menu icon remains available in this page offering
 
-<img src="images/highscore-page-optimized.jpg">
+<img src="images/highest-scores-page-optimized.jpg">
 
-<img src="images/highscore-page-after-optimized.jpg">
+<img src="images/end-page.jpg">
 
 - **The Contact Page**
 
+  - This page provides a way to communicate with the users and it can be selected anytime the menu icon is available.
+  - The users need to provide their Full Name and a valid email address and then they can write anything they want in the text area. If any of the fields is ommitted an alert is shown to advice the users to fill out any empty fields. 
+
 <img src="images/contact-page-optimized.jpg">  
+
+  - Once the users click the submit button below the form they will be directed into a Thank You page were they are initially greated and then their full message is visible. Also, their are adviced that they will be contacted on the email they have provide.
+  - At the bottom of the screen a little instruction to go back to the main landing page is included, so the users are not wondering what they need to do next.
+
+<img src="images/thank-you-page-optimized.jpg">
 
 - **The username page**
 
@@ -83,9 +91,9 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 - **The Game area**
 
-  - 
+  - This is the primary page where all the game is happing. 
+<img src="images/game-area-optimized.jpg">
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
