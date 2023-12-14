@@ -312,7 +312,7 @@ form {
 }
 
 /* Media queries for smaller screens*/
-@media (max-width: 916px) {
+@media (max-width: 934px) {
 
     /* Startup area */
     h1 {
@@ -364,7 +364,32 @@ form {
         margin: -55px 0px -55px -5px;
     }
 
+    /* Instructions Area */
+    #instructions-container {
+        height: 160vh
+    }
+
 }
+
+@media (max-width: 821px) {
+    #instructions-container {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 741px) {
+    #instructions-container {
+        height: 200vh;
+    }
+}
+
+@media (max-width: 654px) {
+    #instructions-container {
+        height: 255vh;
+    }
+}
+
+
 
 @media (max-width: 432px) {
     #instructions-container {
