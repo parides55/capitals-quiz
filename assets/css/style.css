@@ -247,6 +247,13 @@ code {
     justify-content: space-between;
 }
 
+#counter,
+#score {
+    position: relative;
+    left: 10%;
+    top: 2%;
+}
+
 /* Styling the Conatct page*/
 form {
     width: 80%;
@@ -288,13 +295,13 @@ form {
     font-weight: bold;
 }
 
- #display-message {
-     text-align: center;
- }
+#display-message {
+    text-align: center;
+}
 
- #home-icon-text {
-     text-align: center;
- }
+#home-icon-text {
+    text-align: center;
+}
 
 /* Styling the Highscore Area */
 .highscore-divs {
