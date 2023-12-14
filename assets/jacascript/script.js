@@ -7,6 +7,9 @@ const user = document.getElementById('username');
 const showYourScore = document.getElementById('show-your-score');
 const highscores = JSON.parse(localStorage.getItem('highscores')) || [];
 const scoreList = document.getElementById('score-list');
+const displayThankYou = document.getElementById('display-message');
+const contactForm = document.getElementById('contact-form');
+const displayMessage = document.getElementById('display-message');
 const maxQuestions = 3;
 const pointsCorrect = 5;
 let currentQuestion = {};
@@ -25,6 +28,7 @@ const closeIcon = document.getElementById('close-btn');
 const instructionsButton = document.getElementById('instructions-btn');
 const highscoreButton = document.getElementById('highscores-btn');
 const contactButton = document.getElementById('contact-btn');
+const submitButton = document.getElementById('submit-btn');
 
 
 //Variables for the various sections
@@ -35,6 +39,7 @@ const contactPageArea = document.getElementById('contact-page-area');
 const startUpArea = document.getElementById('startup-area');
 const usernameArea = document.getElementById('username-area');
 const gameArea = document.getElementById('game-area');
+const thankYouArea = document.getElementById('thankyou-area');
 
 //Event listeners
 instructionsButton.addEventListener('click', showRules);
@@ -46,6 +51,7 @@ nextButton.addEventListener('click', getNewQuestion);
 playAgainButton.addEventListener('click', setUsername);
 menuIcon.addEventListener('click', displayMenu);
 closeIcon.addEventListener('click', hideMenu);
+submitButton.addEventListener('click', dispalyThankYouMessage);
 //Event Listener to activate the checkAnswer function when a choice button is clicked.
 for (choice of choices) {
     choice.addEventListener('click', checkAnswer);
@@ -108,6 +114,7 @@ window.onload = function () {
     closeIcon.classList.add('hide');
     contactPageArea.classList.add('hide');
     highscoresArea.classList.add('hide');
+    thankYouArea.classList.add('hide');
 };
 
 /**
@@ -311,10 +318,40 @@ function storeHighscores() {
 
 }
 
+/**
+ * It displays the 3 highest scores from the local storage in an ordered list.
+ */
 function displayHighscores() {
 
     scoreList.innerHTML = highscores.map(userScore => {
-        return `<li class="score-list-places">${userScore.name} scored ${userScore.score}</li>`
+        return `<li class="score-list-places">${userScore.name} scored ${userScore.score}</li>`;
     }).join('');
+}
+
+/**
+ * Once the form is Sumbit with the user's details and message this function will display
+ * all this information along with a Thank You message.
+ */
+function dispalyThankYouMessage(event) {
+
+    event.preventDefault();
+
+    let fullName = contactForm.elements['fullname'].value;
+    let emailAddress = contactForm.elements['email'].value;
+    let message = contactForm.elements['message'].value;
+
+    displayMessage.innerHTML = `Hi ${fullName}! You have sent us the following: "${message}". We will get back to you on your email address ${emailAddress}.`
+
+    menuSelections.classList.add('hide');
+    instructionsArea.classList.add('hide');
+    startUpArea.classList.add('hide');
+    usernameArea.classList.add('hide');
+    gameArea.classList.add('hide');
+    menuIcon.classList.add('hide');
+    closeIcon.classList.add('hide');
+    contactPageArea.classList.add('hide');
+    highscoresArea.classList.add('hide');
+    thankYouArea.classList.remove('hide');
+
 }
 
