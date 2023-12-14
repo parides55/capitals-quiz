@@ -260,7 +260,7 @@ form {
 
 /* Styling the Highscore Area */
 .highscore-divs {
-    margin: -100px 0px -100px -35px;
+    margin: -70px 0px -100px -35px;
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
@@ -269,6 +269,7 @@ form {
 #score-list {
     font-size: large;
     font-weight: bold;
+    line-height: 40px;
 }
 
 #score-list-places {

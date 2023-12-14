@@ -8,28 +8,31 @@ The **What's the ?CAPITAL?** game it's an online quiz that is looking to give it
 
 <hr>
 <details>
-<summary><b>Table of Content</b>(click to open)</summary> 
+<summary><b>Table of Content</b>(click to open)</summary>
 
   -[Feathures](#features)<br>
+      -[Existing Feature](#existing-features)<br>
   -[Features left to implement](#features-left-to-implement)<br>
   -[Testing](#testing)<br>
+  
   
 </details>
 
 ## Features
 
-The features available in the game are a home button, which always will bring you to the main landing page, a menu icon, which provides selections to the Instructions of the game, to view the 3 highest scores and to access the contact form, buttons that are designed to give a nice flow and control to the user to start the game, go to the next question or play again. Each features is designed to be easily identified and understoond and give to the user an easy way to navigate around the game. 
+- The main feature of the whole webpage, which also helps a lot to make it fully responsive, is keeping the same structure of content throughout all the pages. All content are centerd and contained in a div which takes the full viewport height and width of the device.
+- The features available to use in the game are a home button, which always will bring you to the main landing page, a menu icon, which provides selections to the Instructions of the game, to view the 3 highest scores and to access the contact form, buttons that are designed to give a nice flow and control to the user to start the game, go to the next question or play again. Each features is designed to be easily identified and understoond and give to the user an easy way to navigate around the game.
 
 ### Existing Features
 
-- __The Landing page__
+- **The Landing page**
 
   - The main Landing page which has in the middle a big tittle with the name of the game which attempts to make clear what the quiz is about.
   - Below the title is a big "Lets's Play!" button which attempts to attract the attention of the user to start playing the game.
 
 <img src="images/main-page-optimized.jpg">
 
-- __The Home Button__
+- **The Home Button**
 
   - The Home Button is always visible in the left top corner and is the only way to come back to the main landing page and start another game.
   - Also, is a way to stop your current game and start another one, since its available throughout the duration of the game in the left top conrer.
@@ -38,27 +41,49 @@ The features available in the game are a home button, which always will bring yo
 
 - **The Menu Button**
 
-  - The Menu Button, which is an unordered list icon, once pressed it will give three selections for the user. To view the Instructions of the game, the three Highest Scores and to access the Contact form.
-  - Once the selections are displayed the unordered list icon is replaced with a cross icon to indicated that when the user clicks on it the selections will be removed.
-  - The three selections have a hoover effect as well to clearly indicate to the user which one is about to be selected. 
+  <img src="images/menu-button-optimized.jpg">
 
-<img src="images/menu-button-optimized.jpg">
+   - The Menu Button, which is an unordered list icon, once pressed it will give three selections for the user. To view the Instructions of the game, the three Highest Scores and to access the Contact form.
+   - Once the selections are displayed the unordered list icon is replaced with a cross icon to indicated that when the user clicks on it the selections will be removed.
+   - The three selections have a hoover effect as well to clearly indicate to the user which one is about to be selected.
 
-<img scc="images/menu-selections-optimized.jpg">
+<img src="images/menu-selections-optimized.jpg">
 
+- **The Instructions page**
 
-- __The Question section__
+  - This page contains all the instructions, not only how to play the quiz, but generally how to use and what to find in the whole webpage.
+  - All the instructions are very simply written and to make it easier to distinguish them they are presented with a little flag icon bullet point.
+  - Also, all the buttons of the game are shown as they are illustriated in the game instead of been described to be easier for the user to identify them.
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly.
+<img src="images/instructions-page-optimized.jpg">
 
-![Question](media/love_maths_question.png)
+- **The Highscore page**
 
-- __The Score Area__
+  - This section will allow the users to see how many points they scored and see if they made it to the top 3.
+  - The page can be selected before the game starts through the menu selections, which in that case only the top 3 scores will be shown.
+  - It will also be shown once the game has finished and in this case the score of the current user will be shown below the top 3 scores. 
+  - Below the user's score a Play again button will appear to prompt, either the same user or a different one, to play again. Once this button is clicked it will take you to the username page.
+  - Also, the menu icon remains available in this page offering 
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided.
+<img src="images/highscore-page-optimized.jpg">
 
-![score](media/love_maths_answer.png)
+<img src="images/highscore-page-after-optimized.jpg">
+
+- **The Contact Page**
+
+<img src="images/contact-page-optimized.jpg">  
+
+- **The username page**
+
+  - Once the Let's Play button, from the main landing page, is clicked the users are directed to this page and are asked to provide a username, so their scored can be linked with them and stored in the local storage of the browser.
+  - The Start button will not allow the users to start the game without providing a username. If the users try to click the start button without a user name an alert will be generated asking the users to provide a username in order to continue.
+  - In the username page only the Home icon is available to select since the game has partially started and the users shouldn't be distracted from other features, so they can have a clear path to follow.
+
+<img src="images/username-page-optimized.jpg">
+
+- **The Game area**
+
+  - 
 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 

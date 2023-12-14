@@ -157,7 +157,7 @@ function getNewQuestion() {
 
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         highscoresArea.classList.remove('hide');
-        showYourScore.innerText = `${user.value} your scored ${score} points`;
+        showYourScore.innerText = `${user.value} you scored ${score} points`;
         playAgainButton.classList.remove('hide');
         gameArea.classList.add('hide');
         menuIcon.classList.remove('hide');
