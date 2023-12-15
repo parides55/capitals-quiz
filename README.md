@@ -15,6 +15,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
   - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
+  - [Unfixed Bugs](#unfixed-bugs)
   - [Tecnnology Used](#tecnnology-used)
   - [Wireframes](#wireframes)
   - [Code Validation and Testing](#code-validation-and-testing)
@@ -151,6 +152,10 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 <hr>
 
+## Unfixed Bugs
+
+  - All the input elements contain a "required" attribute in order to make them mandotory to be completed. During testing I noticed that even not completed the program will let me continue with them been empty and did not provide any information or alert that they were left empty. As a solution to that I added with JavaScript the alert function which alerts the users that they haven't completed the required fields and the program will not continue.
+
 ## Tecnnology Used
 
 - HTML was used to build the content of the webpage.
@@ -206,7 +211,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 - [Microsoft Edge](https://parides55.github.io/capitals-quiz/)
 - [GoogleChrome](https://parides55.github.io/capitals-quiz/)
 
-- In all 3 browsers all features worked as they suppose so. And game was funtioning well and giving the appropriate respones.
+- In all 3 browsers all features worked as they suppose to. And game was funtioning well and giving the appropriate respones.
 
 ## Deployment
 
@@ -219,16 +224,18 @@ The project has been stored safely on GitHub and deployed with [GitHub](https://
 
 [The live link can be found here](https://parides55.github.io/capitals-quiz/)
 
-
-
 ### Content
 
-   - 
+- ColorSpace-3 color generator<img src="images/3-color-generator.jpg">
+
+- [W3School](https://www.w3schools.com/jsref/prop_win_localstorage.asp) - The code and the explanation about how to store the scores and display them in the webpage wasfound in the W3School.
+
+- A list of countries with their capitals was found from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals) in order to complete the questions.
 
  <hr>
  
 ## Credits
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+I have enjoyed very much building this online quiz game and epsecially I was very satisfied to see it coming together and working exactly as I imagined it, since is my first project using JavaScript. 
 
-You can break the credits section up into Content and Media, depending on what you have included in your project.
+My special thanks to my mentor Okwudiri for his continues guidances and continuous inspiration. Also I would like to thanks my friends you have tried my online quiz and they provided me with their feedback and last nut not least, my lovely wife for founding the idea of the quiz and helping me assemble the questions.
