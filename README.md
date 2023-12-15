@@ -20,8 +20,8 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 ## Features
 
-- The main feature of the whole webpage, which also helps a lot to make it fully responsive, is keeping the same structure of content throughout all the pages. All content are centerd and contained in a div which takes the full viewport height and width of the device.
-- The features available to use in the game are a home button, which always will bring you to the main landing page, a menu icon, which provides selections to the Instructions of the game, to view the 3 highest scores and to access the contact form, buttons that are designed to give a nice flow and control to the user to start the game, go to the next question or play again. Each features is designed to be easily identified and understoond and give to the user an easy way to navigate around the game.
+- The main feature of the whole webpage, which also helps a lot to make it fully responsive, is keeping the same structure of content throughout all the pages. All content are centerd and contained in a div which takes the full viewport height and width of the device. In some mobile devices, in order to accommodate more content the viewport height was extend beyond 100vh.
+- The features available to use in the game are a home button, which always will bring you to the main landing page, a menu icon, which provides selections to the Instructions of the game, to view the 3 highest scores and to access the contact form, buttons that are designed to give a nice flow and control to the user to start the game, go to the next question or play again, and all of them have a hoover effect to clearly show the users that they are selectable and active. Each feature is designed to be easily identified and understoond and give to the user an easy way to navigate around the game.
 
 ### Existing Features
 
@@ -29,6 +29,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
   - The main Landing page which has in the middle a big tittle with the name of the game which attempts to make clear what the quiz is about.
   - Below the title is a big "Lets's Play!" button which attempts to attract the attention of the user to start playing the game.
+  - In the left and right top corners the Home and Menu buttons are available for selection.
 
 <img src="images/landing-page-optimized.jpg">
 
@@ -53,7 +54,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
   - This page contains all the instructions, not only how to play the quiz, but generally how to use and what to find in the whole webpage.
   - All the instructions are very simply written and to make it easier to distinguish them they are presented with a little flag icon bullet point.
-  - Also, all the buttons of the game are shown as they are illustriated in the game instead of been described to be easier for the user to identify them.
+  - Also, all the buttons of the game are shown as they are illustriated in the game, instead of been described, so it's easier for the user to identify them.
 
 <img src="images/instructions-page-optimized.jpg">
 
@@ -63,7 +64,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
   - The page can be selected before the game starts through the menu selections, which in that case only the top 3 scores will be shown.
   - It will also be shown once the game has finished and in this case the score of the current user will be shown below the top 3 scores.
   - Below the user's score a Play Again button will appear to prompt, either the same user or a different one, to play again. Once this button is clicked it will take you to the username page.
-  - Also, the menu icon remains available in this page offering
+  - Also, the menu icon remains available in this page, offering the users a way to navigate around the game.
 
 <img src="images/highest-scores-page-optimized.jpg">
 
@@ -83,7 +84,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 - **The username page**
 
-  - Once the Let's Play button, from the main landing page, is clicked the users are directed to this page and are asked to provide a username, so their scored can be linked with them and stored in the local storage of the browser.
+  - Once the "Let's Play" button, from the main landing page, is clicked the users are directed to this page and are asked to provide a username, so their scored can be linked with them and stored in the local storage of the browser.
   - The Start button will not allow the users to start the game without providing a username. If the users try to click the start button without a user name an alert will be generated asking the users to provide a username in order to continue.
   - In the username page only the Home icon is available to select since the game has partially started and the users shouldn't be distracted from other features, so they can have a clear path to follow.
 

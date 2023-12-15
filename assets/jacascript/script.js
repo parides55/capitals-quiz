@@ -340,18 +340,23 @@ function dispalyThankYouMessage(event) {
     let emailAddress = contactForm.elements['email'].value;
     let message = contactForm.elements['message'].value;
 
-    displayMessage.innerHTML = `Hi ${fullName}! You have sent us the following: "${message}". We will get back to you on your email address ${emailAddress}.`
+    if (fullName != null && fullName != "" && fullName != undefined || emailAddress != null && emailAddress != "" && emailAddress != undefined || message != null && message != "" && message != undefined) {
+       
+        displayMessage.innerHTML = `Hi ${fullName}! You have sent us the following: "${message}". We will get back to you on your email address ${emailAddress}.`;
 
-    menuSelections.classList.add('hide');
-    instructionsArea.classList.add('hide');
-    startUpArea.classList.add('hide');
-    usernameArea.classList.add('hide');
-    gameArea.classList.add('hide');
-    menuIcon.classList.add('hide');
-    closeIcon.classList.add('hide');
-    contactPageArea.classList.add('hide');
-    highscoresArea.classList.add('hide');
-    thankYouArea.classList.remove('hide');
+        menuSelections.classList.add('hide');
+        instructionsArea.classList.add('hide');
+        startUpArea.classList.add('hide');
+        usernameArea.classList.add('hide');
+        gameArea.classList.add('hide');
+        menuIcon.classList.add('hide');
+        closeIcon.classList.add('hide');
+        contactPageArea.classList.add('hide');
+        highscoresArea.classList.add('hide');
+        thankYouArea.classList.remove('hide');
+    } else {
+        alert('Please fill all the fields with an asterisk (*)');
+    }
 
 }
 
