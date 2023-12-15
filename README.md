@@ -108,10 +108,9 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 <img src="images/wrong-answer-optimized.jpg">
 
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
-
 ### Features Left to Implement
+
+   - In th
 
 - Another feature idea
 

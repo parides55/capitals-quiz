@@ -7,7 +7,6 @@ const user = document.getElementById('username');
 const showYourScore = document.getElementById('show-your-score');
 const highscores = JSON.parse(localStorage.getItem('highscores')) || [];
 const scoreList = document.getElementById('score-list');
-const displayThankYou = document.getElementById('display-message');
 const contactForm = document.getElementById('contact-form');
 const displayMessage = document.getElementById('display-message');
 const maxQuestions = 3;
