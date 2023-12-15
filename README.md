@@ -10,13 +10,30 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 <details>
 <summary><b>Table of Content</b>(click to open)</summary>
 
-  - [Feathures](#features)<br>
-  -[Existing Feature](#existing-features)<br>
-  - [Features left to implement](#features-left-to-implement)<br>
-  - [Testing](#testing)<br>
+- [**What's the CAPITAL?**](#whats-the-capital)
+  - [User Experience UX](#user-experience-ux)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
+  - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+  - [Other General Project Advice](#other-general-project-advice)
   
   
 </details>
+
+## User Experience UX
+
+
+
+
+
+<hr>
 
 ## Features
 
@@ -110,9 +127,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 ### Features Left to Implement
 
-   - In th
-
-- Another feature idea
+   - In the future it will be nice to add a sound effect whenever a button is click. This will add more feedback to he users 
 
 ## Testing
 
