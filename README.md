@@ -15,9 +15,9 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
   - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
-  - [Testing](#testing)
+  - [Tecnnology Used](#tecnnology-used)
+  - [Code Validation and Testing](#code-validation-and-testing)
     - [Validator Testing](#validator-testing)
-    - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
   - [Credits](#credits)
     - [Content](#content)
@@ -149,33 +149,45 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
    - Also, to extent the game and include pictured questions.
    - And to actually receive the users mesages from the contact form, as it is now, it only displays a thank you page as a feedback.
 
-## Testing
+<hr>
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+## Tecnnology Used
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+- HTML was used to build the content of the webpage.
+- CSS was used to style the webpage.
+- JavaScript was used to add logic to the game and activate all its features.
+- GitHub was used to store the code and deploy it.
+- CodeAnywhere was used to write the code.
+- [FontAweswom](https://fontawesome.com/search?q=home&o=r&m=free) was used to select the icons for the webpage.
+- [Am I Responsive](https://ui.dev/amiresponsive) was used to check for website's responsivness.
+- [ColorSpace](https://mycolor.space/?hex=%23656466&sub=1) was use to select the colors of the webpage, together with the 3 color gradient apply on the background.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+## Code Validation and Testing
 
 ### Validator Testing
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-maths%2F)
+  - No errors were returned when passing through the official [W3C validator](Validator.nu/LV <http://validator.w3.org/services>)
+  <img src="images/HTML-validator-optimized.jpg">
+  
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-maths%252F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator)
+<img src="images/CSS-validator-optimized.jpg">
+
 - JavaScript
   - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
     - The following metrics were returned:
-    - There are 11 functions in this file.
+    - There are 16 functions in this file.
     - Function with the largest signature takes 2 arguments, while the median is 0.
-    - Largest function has 10 statements in it, while the median is 3.
-    - The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+    - Largest function has 21 statements in it, while the median is 9.
+    - The most complex function has a cyclomatic complexity value of 10 while the median is 1.
 
-### Unfixed Bugs
+<img src="images/JSHint-validation-optimized.jpg">
+<img src="images/JSHint-report.jpg">
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+- LightHouse Reports
+
+
 
 ## Deployment
 
@@ -186,7 +198,7 @@ This section should describe the process you went through to deploy the project 
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found here - <https://code-institute-org.github.io/love-maths/>
+[The live link can be found here](https://parides55.github.io/capitals-quiz/)
 
 ## Credits
 
