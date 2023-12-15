@@ -16,13 +16,13 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
   - [Tecnnology Used](#tecnnology-used)
+  - [Wireframes](#wireframes)
   - [Code Validation and Testing](#code-validation-and-testing)
     - [Validator Testing](#validator-testing)
   - [Other Browsers Tested](#other-browsers-tested)
   - [Deployment](#deployment)
-  - [Credits](#credits)
     - [Content](#content)
-    - [Media](#media)
+  - [Credits](#credits)
   
   
 </details>
@@ -161,6 +161,11 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 - [FontAweswom](https://fontawesome.com/search?q=home&o=r&m=free) was used to select the icons for the webpage.
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to check for website's responsivness.
 - [ColorSpace](https://mycolor.space/?hex=%23656466&sub=1) was use to select the colors of the webpage, together with the 3 color gradient apply on the background.
+- Balsamiq was used to produse the wireframes.
+
+## Wireframes
+
+<img src="images/Wireframes-optimized.png">
 
 ## Code Validation and Testing
 
@@ -187,6 +192,14 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 - LightHouse Reports
 
+   - DevTools on Google Chrome - mobile
+
+<img src="images/googleChrom-mobile.jpg">
+
+   - DevTools on Google Chrome - desktop
+
+<img src="images/googleChrom-desktop.jpg">
+
 ## Other Browsers Tested
 
 - [MozzilaFirefox](https://parides55.github.io/capitals-quiz/)
@@ -206,19 +219,16 @@ The project has been stored safely on GitHub and deployed with [GitHub](https://
 
 [The live link can be found here](https://parides55.github.io/capitals-quiz/)
 
+
+
+### Content
+
+   - 
+
+ <hr>
+ 
 ## Credits
 
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
 
 You can break the credits section up into Content and Media, depending on what you have included in your project.
-
-### Content
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
