@@ -101,6 +101,231 @@ const questions = [
         choice3: 'Catalonia',
         choice4: 'Madrid',
         answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Nigeria',
+        choice1: 'Abuja',
+        choice2: 'Accra',
+        choice3: 'Addis Ababa',
+        choice4: 'Madrid',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of UAE',
+        choice1: 'Abu Dhabi',
+        choice2: 'Dubai',
+        choice3: 'Doha',
+        choice4: 'Amman',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of Qatar',
+        choice1: 'Abu Dhabi',
+        choice2: 'Dubai',
+        choice3: 'Doha',
+        choice4: 'Amman',
+        answer: '3'
+    },
+
+    {
+        question: 'What is the capital of Turkey',
+        choice1: 'Instabul',
+        choice2: 'Yerevan',
+        choice3: 'Ankara',
+        choice4: 'Athens',
+        answer: '3'
+    },
+
+    {
+        question: 'What is the capital of China',
+        choice1: 'Cape Town',
+        choice2: 'Shanghai',
+        choice3: 'Hong Kong',
+        choice4: 'Beijing',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Colombia',
+        choice1: 'Buenos Aires',
+        choice2: 'Bogota',
+        choice3: 'Caracas',
+        choice4: 'Montevideo',
+        answer: '2'
+    },
+
+    {
+        question: 'What is the capital of Uruguay',
+        choice1: 'Buenos Aires',
+        choice2: 'Bogota',
+        choice3: 'Caracas',
+        choice4: 'Montevideo',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Peru',
+        choice1: 'Caracas',
+        choice2: 'Bogota',
+        choice3: 'Lima',
+        choice4: 'Madrid',
+        answer: '3'
+    },
+
+    {
+        question: 'What is the capital of Portugal',
+        choice1: 'Seville',
+        choice2: 'Faro',
+        choice3: 'Porto',
+        choice4: 'Lisbon',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Maroco',
+        choice1: 'Casablance',
+        choice2: 'Marrakesh',
+        choice3: 'Podgorica',
+        choice4: 'Rabat',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Iceland',
+        choice1: 'Reykjavík',
+        choice2: 'Akranes',
+        choice3: 'Greenland',
+        choice4: 'Akureyri',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of Puerto Rico',
+        choice1: 'San José',
+        choice2: 'Santiago',
+        choice3: 'San Marino',
+        choice4: 'San Juan',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Chile',
+        choice1: 'San José',
+        choice2: 'Santiago',
+        choice3: 'San Marino',
+        choice4: 'San Juan',
+        answer: '2'
+    },
+
+    {
+        question: 'What is the capital of South Korea',
+        choice1: 'Seoul',
+        choice2: 'Singapore',
+        choice3: 'Pyongyang',
+        choice4: 'Hong Kong',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of Bulgaria',
+        choice1: 'Plovdiv',
+        choice2: 'Burgas',
+        choice3: 'Varnas',
+        choice4: 'Sofia',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Sweden',
+        choice1: 'Stockholm',
+        choice2: 'Oslo',
+        choice3: 'Malmö',
+        choice4: 'Gothenburg',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of Georgia',
+        choice1: 'Damascus',
+        choice2: 'Athens',
+        choice3: 'Atlanta',
+        choice4: 'Tbilisi',
+        answer: '4'
+    },
+
+    {
+        question: 'What is the capital of Russia',
+        choice1: 'Saint Petersburg',
+        choice2: 'Rostov-on-Don',
+        choice3: 'Moscow',
+        choice4: 'Siberia',
+        answer: '3'
+    },
+
+    {
+        question: 'What is the capital of Tunisia',
+        choice1: 'Tunis',
+        choice2: 'Sousse',
+        choice3: 'Casablanca',
+        choice4: 'Kairouan',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of Lithuania',
+        choice1: 'Vilnius',
+        choice2: 'Warsaw',
+        choice3: 'Vienna',
+        choice4: 'Kaunas',
+        answer: '1'
+    },
+
+    {
+        question: 'What is the capital of Cuba',
+        choice1: 'Santiago de Cuba',
+        choice2: 'Santa Clara',
+        choice3: 'Havana',
+        choice4: 'Cienfuegos',
+        answer: '3'
+    },
+
+    {
+        question: 'What is the capital of Guatemala',
+        choice1: 'Tashkent',
+        choice2: 'Guatemala City',
+        choice3: 'Mixco',
+        choice4: 'Antigua Guatemala',
+        answer: '2'
+    },
+
+    {
+        question: 'What is the capital of  Bermuda',
+        choice1: 'Tashkent',
+        choice2: 'Toronto',
+        choice3: 'Hamilton',
+        choice4: 'Hanoi',
+        answer: '3'
+    },
+
+    {
+        question: 'What is the capital of Senegal',
+        choice1: 'TNicosia',
+        choice2: 'Dakar',
+        choice3: 'Copenhagen',
+        choice4: 'Lagos',
+        answer: '2'
+    },
+
+    {
+        question: 'What is the capital of Barbados',
+        choice1: 'Hanoi',
+        choice2: 'Dakar',
+        choice3: 'Bridgetown',
+        choice4: 'Brazzaville',
+        answer: '3'
     }
 ];
 
