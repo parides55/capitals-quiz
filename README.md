@@ -167,6 +167,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 - [Am I Responsive](https://ui.dev/amiresponsive) was used to check for website's responsivness.
 - [ColorSpace](https://mycolor.space/?hex=%23656466&sub=1) was use to select the colors of the webpage, together with the 3 color gradient apply on the background.
 - Balsamiq was used to produse the wireframes.
+- [Favicon Generator](https://favicon.io/favicon-generator/) was use to generate the favicon of the webpage.
 
 ## Wireframes
 
