@@ -29,10 +29,28 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 ## User Experience UX
 
+ - First time visitor
 
+    - As a first time user, I am looking for what the site has to offer.
 
+    - I would be looking how accessible is the site and its features.
 
+    - And does the content of the site motivate and meet my search goal?
 
+<hr>
+
+ - Returning visitor
+  
+    - As a returning user I want to find a feedback/oontact form.
+
+    - I would like to find out other games extension to the current one.
+
+<hr>
+
+ - Frequent visitor
+
+    - As a frequent user to know about any updates made to the questions.
+  
 <hr>
 
 ## Features
@@ -127,7 +145,9 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 ### Features Left to Implement
 
-   - In the future it will be nice to add a sound effect whenever a button is click. This will add more feedback to he users 
+   - In the future it will be nice to add a sound effect whenever a button is click. This will add more feedback to he users.
+   - Also, to extent the game and include pictured questions.
+   - And to actually receive the users mesages from the contact form, as it is now, it only displays a thank you page as a feedback.
 
 ## Testing
 
