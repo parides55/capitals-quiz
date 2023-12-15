@@ -64,7 +64,7 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
   - The page can be selected before the game starts through the menu selections, which in that case only the top 3 scores will be shown.
   - It will also be shown once the game has finished and in this case the score of the current user will be shown below the top 3 scores.
   - Below the user's score a Play Again button will appear to prompt, either the same user or a different one, to play again. Once this button is clicked it will take you to the username page.
-  - Also, the menu icon remains available in this page, offering the users a way to navigate around the game.
+  - Also, the menu icon remains available in this page, offers the users a way to navigate around the game.
 
 <img src="images/highest-scores-page-optimized.jpg">
 
@@ -77,8 +77,8 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 <img src="images/contact-page-optimized.jpg">  
 
-  - Once the users click the submit button below the form they will be directed into a Thank You page were they are initially greated and then their full message is visible. Also, their are adviced that they will be contacted on the email they have provide.
-  - At the bottom of the screen a little instruction to go back to the main landing page is included, so the users are not wondering what they need to do next.
+   -  Once the users click the submit button below the form they will be directed into a Thank You page were they are initially greated and then their full message is visible. Also, their are adviced that they will be contacted on the email they have provide.
+   -  At the bottom of the screen a little instruction to go back to the main landing page is included, so the users are not wondering what they need to do next.
 
 <img src="images/thank-you-page-optimized.jpg">
 
@@ -92,8 +92,21 @@ The **What's the CAPITAL?** game it's an online quiz that is looking to give its
 
 - **The Game area**
 
-  - This is the primary page where all the game is happing. 
+  - This is the primary page where all the game is happing. It is presented in single column structure which makes it fully responsive in all devices. 
+  - Once the game starts a randomly generate question is shown with it's associated answers. The four answers are buttons which at this time are enabled and every time the cursor hoover above them it becomes a pointer, to show that this selection is available.  Once a selection is made all four buttins become disabled and the cursor becomes a no-drop icon, which shows that no more selections are available.
+  - If the users have answered correctly the whole button becomes green, otherwise becomes red and the correct answer is automaticaly highlighted as green. This provides a nice, immediate, feedback to the users regarding the correct answer since the quiz is aiming to educate as well.
+  - Once the answer is shown a "Next" button appears below the answers and is available to be clicked from the users when they are ready. This way the users have time to review the answer, especially if they made the wrong selection.
+  - At the bottom two corners the current score of the users if shown which gives them one point for every correct answer and also, how many questions the users answered and how many are left.
+
 <img src="images/game-area-optimized.jpg">
+
+   - Correct answer
+
+<img src="images/correct-answer-optimized.jpg">
+
+   - Wrong answer
+
+<img src="images/wrong-answer-optimized.jpg">
 
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
