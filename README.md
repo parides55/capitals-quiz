@@ -229,7 +229,7 @@ The project has been stored safely on GitHub and deployed with [GitHub](https://
 
 - ColorSpace-3 color generator<img src="images/3-color-generator.jpg">
 
-- [W3School](https://www.w3schools.com/jsref/prop_win_localstorage.asp) - The code and the explanation about how to store the scores and display them in the webpage wasfound in the W3School.
+- [W3School](https://www.w3schools.com/jsref/prop_win_localstorage.asp) - The code and the explanation about how to store the scores in the local storage of the browser and display them in the webpage was found in the W3School.
 
 - A list of countries with their capitals was found from [Wikipedia](https://en.wikipedia.org/wiki/List_of_national_capitals) in order to complete the questions.
 
